@@ -38,6 +38,13 @@ def html():
     server_scripts {
         'server.lua',
     }
+
+    files {
+        'html/*.html',
+        'html/*.css',
+        'html/*.js'
+    }
+    ui_page 'html/index.html'
     """
 
     index_html_content = """
@@ -137,6 +144,13 @@ def tail():
     server_scripts {
         'server.lua',
     }
+    
+    files {
+        'html/*.html',
+        'html/*.css',
+        'html/*.js'
+    }
+    ui_page 'html/index.html'
     """
 
     index_html_content = """
